@@ -2,9 +2,9 @@ require('./../css/kaguya.less');
 window.$ = require('./jquery-2.1.4.min.js');
 var snowfall = require('./snowfall.jquery.js');
 var Kaguya = {
-    init: function(ele) {
-        this.setBackground(ele, './images/kaguya.jpg');
-        this.setSnow(ele, './images/snow.png');
+    init: function(image) {
+        this.setBackground('body', './images/' + image + '');
+        this.setSnow('body', './images/snow.png');
         // this.setSnow(ele);
     },
     setBackground: function(ele, url) {
@@ -44,4 +44,4 @@ var Kaguya = {
 
     }
 };
-Kaguya.init('body');
+Kaguya.init('kaguya.jpg');
