@@ -10,7 +10,7 @@ var Kaguya = {
         this.setRipples('body');
         // this.setVideo();
         this.setSnow('body');
-        this.autoDrop();
+        // this.autoDrop();
     },
     setStyle: function() {
         $('*').css({
