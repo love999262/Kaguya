@@ -1,7 +1,7 @@
-// require('./../css/kaguya.less');
-// window.$ = require('./jquery-2.1.4.min.js');
-// var snowfall = require('./snowfall.jquery.js');
-// var ripples = require('./jquery.ripples.js');
+require('./../css/kaguya.less');
+window.$ = require('jquery');
+var snowfall = require('./snowfall.jquery.js');
+var ripples = require('imports-loader?$=jquery!./jquery.ripples.js');
 var Kaguya = {
     init: function(image) {
         this.setStyle();
